@@ -1,18 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package entidades;
 
 import java.util.ArrayList;
-import java.util.List;
-
 
 /**
  *
  * @author Copy&&Paste
  */
+
 public class Main {
     
     static public void main(String args[]){ 
@@ -25,8 +20,6 @@ public class Main {
         EmpleadoPorHoras em6 = new EmpleadoPorHoras(50, 8, "D", "E", "15");
         
         Empleados[] empleados = {em1, em2, em3, em4, em5, em6};
-        
-        
         
         //PUNTO C
         for(int i=0; i< empleados.length; i++){
@@ -73,7 +66,12 @@ public class Main {
             sumaTotal += empleados[i].montoPago();
         }
          System.out.println("\nTOTAL: " + sumaTotal);
-         
+        
+        ArrayList<Object> list = new ArrayList <Object>();
+        list.add(f2);
+        for(Object o: list){
+            System.out.println(o);                 
+        }
     }
     
     

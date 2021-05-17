@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package entidades;
 
 /**
@@ -22,6 +18,7 @@ public class EmpleadoPorHoras extends Empleados{
         this.horasTrabajadas = horas;
     }
     
+    //Metodos
     public double getSueldo(){
         return this.sueldoPorHoras;
     }
