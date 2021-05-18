@@ -47,10 +47,6 @@ public class Main {
 
         Factura[] facturas = {f1,f2};
 
-        for(int i=0;i<facturas.length;i++){
-            System.out.println(facturas[i].toString());
-        }
-
         //PUNTO D
         double sumaTotal = 0; 
         
@@ -67,12 +63,5 @@ public class Main {
         }
          System.out.println("\nTOTAL: " + sumaTotal);
         
-        ArrayList<Object> list = new ArrayList <Object>();
-        list.add(f2);
-        for(Object o: list){
-            System.out.println(o);                 
-        }
     }
-    
-    
 }

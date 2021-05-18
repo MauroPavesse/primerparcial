@@ -20,10 +20,6 @@ public class Factura implements Liquidacion{
     }
     
     // Metodos
-    public double getMonto(){
-        return this.montoTotal;
-    }
-    
     public double calculaMonto(){
         var monto = 0;
         for(int i=0;i<Repuesto.length;i++){
@@ -37,15 +33,6 @@ public class Factura implements Liquidacion{
         }
         this.montoTotal = monto;
         return this.montoTotal;
-    }
-    
-    public String toString() {
-        StringBuilder sb = new StringBuilder();  
-        sb.append("\nNumero factura: ");
-        sb.append(this.numeroFactura);
-        sb.append("\nMonto total: ");
-        sb.append(this.calculaMonto());
-        return sb.toString();
     }
     
     public double montoPago(){
